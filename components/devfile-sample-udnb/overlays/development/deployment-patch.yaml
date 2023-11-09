@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-udnb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0017-tenant/cin4s-839-0017-app/devfile-sample-udnb@sha256:2bfbac37760b2307cd764434720870613869a58a698fdf048cb7a1c51a957f9e
+        name: my-nodejs
+        resources: {}
+status: {}
